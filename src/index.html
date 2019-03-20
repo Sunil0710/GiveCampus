@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Campaign Card</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+    <div id="card" class="flip-card" onclick="flip()">
+        <div class="flip-card-inner">
+            <div class="flip-card-front" >
+                <div id="front-card-head">
+                    <img src="../src/image.PNG" alt="clg_image" style="width:350px;height:300px;">
+                </div>
+                <div id="front-card-body" style="margin: 10px">
+                    <h2>Class of 2017 Challenge</h2>
+                    <h4 style="margin-top: -20px">For College of the Holy Cross</h4>
+                    <p>$25,000 is on the line. Please make a gift today to honor Dean Paco and help 2017 reacah 60%!</p>
+                    <br />
+                    <div id="progressSection">
+                        <div>
+                            <span id="totalPercentage" class="float-left"></span>
+                            <span id="totalDonors" class="float-right"></span>
+                        </div>
+                        <br />
+                        <div id="progressbar">
+                            <div id="progressbar-width"></div>
+                        </div>
+                        <div>
+                            <span id="donationStatus" class="float-left"></span>
+                            <span id="totalAmountDonated" class="float-right"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card-back">
+                <div id="backHeader">
+                    <h2>Class of 2017 Challenge</h2>
+                    <h4 style="margin-top: -20px">Top 10 donors</h4>
+                </div>
+                <div style="height: 52%; overflow:auto">
+                    <table id="donorTable">
+                        <tr>
+                            <th>Donor</th>
+                            <th>Dollars</th>
+                            <th>Type</th>
+                        </tr>
+                    </table>
+                </div>
+                <div id="buttonSection" style="margin: 15%">
+                    <button id="makeGifBtn">MAKE A GIFT</button>
+                </div>
+                <h1 id="totalAmount" style="margin: 15%"></h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
